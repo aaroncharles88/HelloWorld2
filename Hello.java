@@ -16,5 +16,6 @@ public class Hello {
 		System.out.println("Hi Ester!");
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 		System.out.println("The current local date is: " + LocalDate.now().format(formatter));
+		System.out.println("Current amount of free memory: " + Runtime.getRuntime().freeMemory() + " bytes.");
 	}
 }
