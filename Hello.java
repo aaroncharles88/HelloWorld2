@@ -1,5 +1,8 @@
 package hello;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Hello {
 
 	public static void main(String[] args) {
@@ -11,5 +14,7 @@ public class Hello {
 		System.out.println("Hi Charlie!");
 		System.out.println("Hi Denise!");
 		System.out.println("Hi Ester!");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		System.out.println("The current local date is: " + LocalDate.now().format(formatter));
 	}
 }
